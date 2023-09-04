@@ -2,10 +2,10 @@
 /shelf/
 /workspace.xml
 # Rider ignored files
-/contentModel.xml
-/.idea.P2CodeExecution.iml
-/modules.xml
 /projectSettingsUpdater.xml
+/.idea.GP23-102-csharp-basics.iml
+/contentModel.xml
+/modules.xml
 # Editor-based HTTP Client requests
 /httpRequests/
 # Datasource local storage ignored files
