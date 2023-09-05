@@ -1,4 +1,4 @@
-﻿var outputString = "Hello, World";
+﻿string outputString = "Hello, World";
 Console.WriteLine(outputString);
 float decimalValue = 0.3f;
 Console.WriteLine(decimalValue);
