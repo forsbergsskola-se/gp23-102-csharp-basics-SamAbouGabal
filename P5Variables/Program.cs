@@ -1,5 +1,4 @@
-﻿int Money;
-Money = 5;
-Console.WriteLine(Money);
-Money = 10;
-Console.WriteLine(Money);
+﻿var number = 5;
+Console.WriteLine(number);
+number = 10;
+Console.WriteLine(number);
