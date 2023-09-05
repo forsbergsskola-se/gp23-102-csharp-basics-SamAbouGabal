@@ -1,3 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-Console.WriteLine("Hello, World!");
+﻿int Money;
+Money = 5;
+Console.WriteLine(Money);
+Money = 10;
+Console.WriteLine(Money);
