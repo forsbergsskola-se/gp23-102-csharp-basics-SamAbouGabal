@@ -11,4 +11,3 @@ Console.WriteLine(o);
 //second: try casting it Error? then
 //Third: try parsing it. Error? then
 //Last: try converting it. Error? then
-//KYS
