@@ -1,10 +1,13 @@
-﻿using System.Globalization;
+﻿Console.WriteLine("Give me a number. Preferably 5.6");
+string number = Console.ReadLine();
+double d = double.Parse(number);
+Console.WriteLine(d);
+int i  = (int)d;
+Console.WriteLine(i);
+int o = int.Parse(number);
+Console.WriteLine(o);
 
-float number = 5.6f;
-Console.WriteLine("Give me a number. Preferably 5.6");
-var input  = Console.ReadLine();
-Console.WriteLine(number);
-double fractionalNumber = 5;
-Console.WriteLine(fractionalNumber);
-fractionalNumber = Convert.ToDouble(input, CultureInfo.InvariantCulture);
-Console.WriteLine (fractionalNumber);
+//First: try assigning it. Error? then
+//second: try casting it Error? then
+//Third: try parsing it. Error? then
+//Last: try converting it
