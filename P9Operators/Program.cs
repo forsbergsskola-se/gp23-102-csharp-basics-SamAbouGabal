@@ -55,12 +55,61 @@ Console.WriteLine($"The Modulo output is {mod}");
 */
 
 
-/* Exercise 6 (Develop a program that calculates the area of a circle using a float input for the radius and displays the result.)
-USED "VAR"
+/* Exercise 6 (Write a code that calculates radius of a circle to area)
 Console.WriteLine("Give me a radius for a circle");
 Console.WriteLine("Type in the radius: ");
 string userInputX = Console.ReadLine();
-var x = Convert.ToDouble(userInputX);
+int x = Convert.ToInt32(userInputX);
 double answer = 3.142 * x * x;
 Console.WriteLine($"The area of the circle is {answer}");
+*/
+
+/* Exercise 7 
+Console.WriteLine("Give me a number for me to change it's negation");
+string userInput = Console.ReadLine();
+int x = int.Parse(userInput);
+int negationNumber = -x;
+Console.WriteLine($"Here's the negation: {negationNumber}");
+*/
+
+/* Exercise 8 (Develop a program that takes two integers as input and calculates their product using the multiplication operator.)
+Console.WriteLine("Let me multiply two numbers for you");
+Console.WriteLine("enter your numbers below");
+string userInputX = Console.ReadLine();
+Console.WriteLine("x");
+string userInputY = Console.ReadLine();
+int x = Convert.ToInt32 (userInputX);
+int y = Convert.ToInt32 (userInputY);
+float answer = x * y;
+Console.WriteLine($"The answer is: {answer}");
+*/
+
+
+
+
+/*
+Console.WriteLine("Give me a number of seconds");
+string userInput = Console.ReadLine();
+int S = Convert.ToInt32(userInput);
+int M = Convert.ToInt32(userInput);
+int H = Convert.ToInt32(userInput);
+int D = Convert.ToInt32(userInput);
+
+int D = userInput / 86400;
+int remainingSeconds = userInput % 86400;
+
+int H = remainingSeconds / 3600;
+remainingSeconds %= 3600;
+
+int M = remainingSeconds / 60;
+
+int S = remainingSeconds % 60;
+
+double totalDays = (double)userInput / 86400;
+Console.WriteLine($"seconds: {S}");
+Console.WriteLine($"minutes: {M}");
+Console.WriteLine($"hours: {H}");
+Console.WriteLine($"days: {D}");
+Console.WriteLine($"In total, that's {totalDays}");
+Console.WriteLine($"");
 */
