@@ -1,6 +1,6 @@
 ﻿/* Exercise 1
 
-Console.WriteLine("welcome to km/h to m/h converter");
+Console.WriteLine("welcome to km/h to m/s converter");
 Console.WriteLine("Please enter a value in km/h");
 string userInput = Console.ReadLine();
 float userNumber = float.Parse(userInput);
@@ -85,31 +85,25 @@ Console.WriteLine($"The answer is: {answer}");
 */
 
 
+Console.Write("Enter the number of seconds: ");
+int totalSeconds = Convert.ToInt32(Console.ReadLine());
 
 
-/*
-Console.WriteLine("Give me a number of seconds");
-string userInput = Console.ReadLine();
-int S = Convert.ToInt32(userInput);
-int M = Convert.ToInt32(userInput);
-int H = Convert.ToInt32(userInput);
-int D = Convert.ToInt32(userInput);
+double totalDaysFraction = (double)totalSeconds / 86400;
+int days = totalSeconds / 86400;
+totalSeconds %= 86400;
+int hours = totalSeconds / 3600;
+totalSeconds %= 3600;
+int minutes = totalSeconds / 60;
+int seconds = totalSeconds % 60;
 
-int D = userInput / 86400;
-int remainingSeconds = userInput % 86400;
+ 
+Console.WriteLine($"Days: {days}");
+Console.WriteLine($"Hours: {hours}");
+Console.WriteLine($"Minutes: {minutes}");
+Console.WriteLine($"Seconds: {seconds}");
 
-int H = remainingSeconds / 3600;
-remainingSeconds %= 3600;
+        
+Console.WriteLine($"Formatted Time: {days}.{hours}:{minutes}:{seconds}");
 
-int M = remainingSeconds / 60;
-
-int S = remainingSeconds % 60;
-
-double totalDays = (double)userInput / 86400;
-Console.WriteLine($"seconds: {S}");
-Console.WriteLine($"minutes: {M}");
-Console.WriteLine($"hours: {H}");
-Console.WriteLine($"days: {D}");
-Console.WriteLine($"In total, that's {totalDays}");
-Console.WriteLine($"");
-*/
+Console.WriteLine($"Total Days as a Fraction: {totalDaysFraction}");
