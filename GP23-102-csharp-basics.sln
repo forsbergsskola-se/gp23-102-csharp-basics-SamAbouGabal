@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10Boolean", "P10Boolean\P1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GP23 exercise discord", "GP23 exercise discord\GP23 exercise discord.csproj", "{17BD2832-89B2-4C21-A8F5-7617A2DA7BB3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P11IfElse", "P11IfElse\P11IfElse.csproj", "{37810305-4F19-41C0-9D1C-93AF32A4F66E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,5 +68,9 @@ Global
 		{17BD2832-89B2-4C21-A8F5-7617A2DA7BB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17BD2832-89B2-4C21-A8F5-7617A2DA7BB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17BD2832-89B2-4C21-A8F5-7617A2DA7BB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37810305-4F19-41C0-9D1C-93AF32A4F66E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37810305-4F19-41C0-9D1C-93AF32A4F66E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37810305-4F19-41C0-9D1C-93AF32A4F66E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37810305-4F19-41C0-9D1C-93AF32A4F66E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
