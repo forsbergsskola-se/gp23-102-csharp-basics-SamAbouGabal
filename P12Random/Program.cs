@@ -1,11 +1,11 @@
-﻿Console.WriteLine("Oi give me a seed bruv");
+﻿Console.WriteLine("Please pass me a seed (integer).");
 string userInput = Console.ReadLine();
 int userSeed = int.Parse(userInput);
 Random seed = new Random(userSeed);
 
-Console.WriteLine(seed.Next(0, 5));
-Console.WriteLine(seed.Next(0, 5));
-Console.WriteLine(seed.Next(0, 5));
+Console.WriteLine(seed.Next(5));
+Console.WriteLine(seed.Next(5));
+Console.WriteLine(seed.Next(5));
 
 Console.WriteLine("Three numbers between 0.0 and 0.5:");
 Console.WriteLine(seed.NextDouble() * 0.5);
@@ -19,7 +19,7 @@ Console.WriteLine(seed.NextDouble() * 0.5 + 0.2);
 
 Console.WriteLine("Give me a crit chance between 0,0 (0%) and 1,0 (100%)");
 string userInputCrit = Console.ReadLine();
-float userCrit = float.Parse(userInputCrit);
+double userCrit = double.Parse(userInputCrit);
 
 if (Random.Shared.NextDouble() < (userCrit))
 {
@@ -27,7 +27,7 @@ if (Random.Shared.NextDouble() < (userCrit))
 }
 else
 {
-    Console.WriteLine("No crit");
+    Console.WriteLine("No Crit");
 }
 if (Random.Shared.NextDouble() < (userCrit))
 {
@@ -35,7 +35,7 @@ if (Random.Shared.NextDouble() < (userCrit))
 }
 else
 {
-    Console.WriteLine("No crit");
+    Console.WriteLine("No Crit");
 }
 if (Random.Shared.NextDouble() < (userCrit))
 {
@@ -43,7 +43,7 @@ if (Random.Shared.NextDouble() < (userCrit))
 }
 else
 {
-    Console.WriteLine("No crit");
+    Console.WriteLine("No Crit");
 }
 if (Random.Shared.NextDouble() < (userCrit))
 {
@@ -51,7 +51,7 @@ if (Random.Shared.NextDouble() < (userCrit))
 }
 else
 {
-    Console.WriteLine("No crit");
+    Console.WriteLine("No Crit");
 }
 if (Random.Shared.NextDouble() < (userCrit))
 {
@@ -59,5 +59,5 @@ if (Random.Shared.NextDouble() < (userCrit))
 }
 else
 {
-    Console.WriteLine("No crit");
+    Console.WriteLine("No Crit");
 }
