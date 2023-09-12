@@ -1,4 +1,6 @@
-﻿var number = 5;
-Console.WriteLine(number);
-number = 10;
-Console.WriteLine(number);
+﻿string a;
+a = "Hello";
+Console.WriteLine(a);
+a = "World";
+Console.WriteLine(a);
+a = string b;
