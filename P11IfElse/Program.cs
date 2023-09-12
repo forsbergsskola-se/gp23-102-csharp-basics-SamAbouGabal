@@ -48,3 +48,30 @@ else
     }
 }
 */
+
+/* Exercise 2
+Console.WriteLine("Giveth me a numerical and i will presenteth thy with a character");
+string userInput = Console.ReadLine();
+int characters = int.Parse(userInput);
+if (characters >= 90)
+{
+    Console.WriteLine("A");
+}
+else if (characters >= 80)
+{
+    Console.WriteLine("B");
+}
+else if (characters >= 70)
+{
+    Console.WriteLine("C");
+}
+else if (characters >= 60)
+{
+    Console.WriteLine("D");
+}
+else if (characters < 60)
+{
+    Console.WriteLine("F");
+}
+*/
+
