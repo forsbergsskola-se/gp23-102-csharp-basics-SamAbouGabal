@@ -54,3 +54,16 @@ float bodyMass = userInputkg / (userInputcm*userInputcm /100f /100f);
 Console.WriteLine($"Your BMI is {bodyMass}");
 */
 
+/* Print "$" from userInput
+Console.WriteLine("How many dollar do you want mate");
+int count = int.Parse(Console.ReadLine());
+int print = count;
+Console.Write("Here's your cash bruv ");
+PRINTAGAIN:
+if (print >0)
+{
+    Console.Write("$");
+    print--;
+    goto PRINTAGAIN;
+}
+*/
