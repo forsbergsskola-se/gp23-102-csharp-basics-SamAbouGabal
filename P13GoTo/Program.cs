@@ -46,6 +46,8 @@ while(attempts < 10);
 if (attempts >10)
 */
 
+using System.Threading.Channels;
+
 Random random = new Random();
 int myRandom = random.Next (1,100);
 Console.WriteLine(@"Welcome to guess my number game!
@@ -53,7 +55,7 @@ I will ask you for a number between 1-100.
 If you guess the right number you win!
 Otherwise i will give you a clue if my number is Higher or Lower.
 Sounds good? Let's go");
-
+int attempts = 10;
 Console.WriteLine("I have picked a number (1-100). It's your turn to guess it!");
 nextTurn:
 {
@@ -63,14 +65,18 @@ nextTurn:
         Console.WriteLine("That's the number! Well played!");
         
     }
+    else if (attempts <= 1)
+    {
+        Console.WriteLine($"You've run out of guesses. GAME OVER. The correct answer is : {myRandom}");
+    }
     else if (userInput < myRandom)
     {
-        Console.WriteLine("Nope! My number is Greater!");
+        Console.WriteLine($"Nope! My number is Greater! You have {--attempts} left");
         goto nextTurn;
     }
     else if (userInput > myRandom)
     {
-        Console.WriteLine("Nope! My number is Smaller!");
+        Console.WriteLine($"Nope! My number is Smaller! You have {--attempts} left");
         goto nextTurn;
     }
 }
