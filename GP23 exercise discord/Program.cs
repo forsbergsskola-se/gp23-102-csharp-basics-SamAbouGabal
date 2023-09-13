@@ -2,7 +2,7 @@
 Console.WriteLine("Hello, Give me a Km/h, and i will output m/s");
 string userInput = Console.ReadLine();
 float number = float.Parse(userInput);
-double x = number / 60 / 60 * 1000;
+double x = number *1000 / 60 / 60;
 Console.WriteLine($"m/s is:{x}");
 */
 
