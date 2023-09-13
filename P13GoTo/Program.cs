@@ -42,7 +42,9 @@ end if
 
 /*
 int attempts = 0;
-while(attempts < 10);*/
+while(attempts < 10);
+if (attempts >10)
+*/
 
 Random random = new Random();
 int myRandom = random.Next (1,100);
@@ -54,31 +56,21 @@ Sounds good? Let's go");
 
 Console.WriteLine("I have picked a number (1-100). It's your turn to guess it!");
 nextTurn:
-int attempts = 0;
-while(attempts < 10);
 {
+    int userInput = int.Parse(Console.ReadLine());
+    if (myRandom.Equals(userInput))
     {
-        int userInput = int.Parse(Console.ReadLine());
-        if (myRandom.Equals(userInput))
-        {
-            Console.WriteLine("That's the number! Well played!");
-
-        }
-        else if (userInput < myRandom)
-        {
-            Console.WriteLine("Nope! My number is Greater!");
-            goto nextTurn;
-        }
-        else if (userInput > myRandom)
-        {
-            Console.WriteLine("Nope! My number is Smaller!");
-            goto nextTurn;
-        }
+        Console.WriteLine("That's the number! Well played!");
+        
     }
-}
-
-if (attempts >= 10)
-{
-    Console.WriteLine($"Sorry! You've run out of attempts. My number was {myRandom}");
-    goto nextTurn;
+    else if (userInput < myRandom)
+    {
+        Console.WriteLine("Nope! My number is Greater!");
+        goto nextTurn;
+    }
+    else if (userInput > myRandom)
+    {
+        Console.WriteLine("Nope! My number is Smaller!");
+        goto nextTurn;
+    }
 }
