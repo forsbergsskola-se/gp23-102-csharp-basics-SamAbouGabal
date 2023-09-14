@@ -39,7 +39,7 @@ end if
 
 
 Random random = new Random();
-int myRandom = random.Next (1,100);
+int myRandom = random.Next(1, 100);
 Console.WriteLine(@"Welcome to guess my number game!
 I will ask you for a number between 1-100.
 If you guess the right number you win!
@@ -52,18 +52,16 @@ nextTurn:
 int userInput = int.Parse(Console.ReadLine());
 if (myRandom == userInput)
 {
-        Console.WriteLine("That's the number! Well played!");
-        
+    Console.WriteLine("That's the number! Well played!");
 }
 else if (attempts <= 1)
-    {
-            Console.WriteLine($"You've run out of guesses. GAME OVER. The correct answer is : {myRandom}");
-    }
+{
+    Console.WriteLine($"You've run out of guesses. GAME OVER. The correct answer is : {myRandom}");
+}
 
 else
-    {
-        string answer = userInput < myRandom && (attempts > 1) ? "Greater" : "smaller";
-        Console.WriteLine($"Nope! My number is {answer}! You have {--attempts} left");
-        goto nextTurn;
-
-    }
+{
+    string answer = userInput < myRandom ? "Greater" : "smaller";
+    Console.WriteLine($"Nope! My number is {answer}! You have {--attempts} left");
+    goto nextTurn;
+}
