@@ -58,25 +58,22 @@ Sounds good? Let's go");
 int attempts = 10;
 Console.WriteLine("I have picked a number (1-100). It's your turn to guess it!");
 nextTurn:
+
+int userInput = int.Parse(Console.ReadLine());
+if (myRandom == userInput)
 {
-    int userInput = int.Parse(Console.ReadLine());
-    if (myRandom.Equals(userInput))
-    {
         Console.WriteLine("That's the number! Well played!");
         
-    }
-    else if (attempts <= 1)
-    {
-        Console.WriteLine($"You've run out of guesses. GAME OVER. The correct answer is : {myRandom}");
-    }
-    else if (userInput < myRandom)
-    {
-        Console.WriteLine($"Nope! My number is Greater! You have {--attempts} left");
-        goto nextTurn;
-    }
-    else if (userInput > myRandom)
-    {
-        Console.WriteLine($"Nope! My number is Smaller! You have {--attempts} left");
-        goto nextTurn;
-    }
 }
+else if (attempts <= 1)
+    {
+            Console.WriteLine($"You've run out of guesses. GAME OVER. The correct answer is : {myRandom}");
+    }
+
+else
+    {
+        string answer = userInput < myRandom && (attempts > 1) ? "Greater" : "smaller";
+        Console.WriteLine($"Nope! My number is {answer}! You have {--attempts} left");
+        goto nextTurn;
+
+    }
