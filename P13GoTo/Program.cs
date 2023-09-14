@@ -38,16 +38,6 @@ end if
 */
 
 
-
-
-/*
-int attempts = 0;
-while(attempts < 10);
-if (attempts >10)
-*/
-
-using System.Threading.Channels;
-
 Random random = new Random();
 int myRandom = random.Next (1,100);
 Console.WriteLine(@"Welcome to guess my number game!
