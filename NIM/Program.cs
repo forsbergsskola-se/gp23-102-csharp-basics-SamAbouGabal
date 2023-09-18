@@ -11,7 +11,7 @@ while (matches > 0)
         int userChoise;
         Console.WriteLine("Your turn. Remove 1-3 matches");
         UserInputAgain:
-        if (!int.TryParse(Console.ReadLine(), out userChoise) || userChoise < 1 || userChoise > 3)
+        if (!int.TryParse(Console.ReadLine(), out userChoise) || userChoise < 1 || userChoise > 3 || userChoise > matches)
         {
             Console.WriteLine("Invalid input. Input a number between 1-3");
             goto UserInputAgain;
